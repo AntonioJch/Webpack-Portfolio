@@ -1,4 +1,8 @@
-const API = 'https://randomuser.me/api/';
+//vamos a llamar a nuestra API directamente desde nuestra 
+//Variable de Entorno Clase 14
+// de esta forma protegemos nuestro codigo de datos que podrian
+//ser sensibles.
+const API = process.env.API;
 
 const getData = async (id) => {
   const apiURl = id ? `${API}${id}` : API;
